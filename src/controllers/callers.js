@@ -28,6 +28,7 @@ export const createCaller = async (req, res) => {
 export const updateCaller = async (req, res) => {
   const { id: _id } = req.params;
   const caller = req.body;
+  console.log("🚀 ~ file: callers.js:31 ~ updateCaller ~ caller:", req.body)
 
   try {
     const updatedCaller = await Caller.findByIdAndUpdate(_id, caller, {

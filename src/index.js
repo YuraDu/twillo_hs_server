@@ -4,10 +4,14 @@ import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 import callersRouter from "./routers/callers.js";
+import bodyParser from "body-parser";
 
 
 // Create an Express app
 const app = express();
+
+app.use(bodyParser.json({ limit: "30mb", extended: true }));
+app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));// Parse URL-encoded request bodies
 
 dotenv.config();
 
