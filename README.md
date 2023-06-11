@@ -13,14 +13,14 @@ This is the server-side of your app.
 1. Clone the repository to your local machine using the following command:
 
    ```shell
-   git clone https://github.com/your-username/your-app-name.git
+   git clone https://github.com/YuraDXPNetwork/twillo_hs_server.git
    ```
 ````
 
 2. Navigate to the project directory:
 
    ```shell
-   cd your-app-name
+   cd server
    ```
 
 3. Install the dependencies by running the following command:
